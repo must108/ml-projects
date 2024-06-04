@@ -1,2 +1,2 @@
 
-this repository contains files and projects that use scikit-learn for machine learning
+this repository contains files and projects implementing several topics in machine learning
