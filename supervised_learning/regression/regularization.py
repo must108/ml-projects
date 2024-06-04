@@ -42,7 +42,7 @@ for alpha in [0.1, 1.0, 10.0, 100.0, 1000.0]:
 import pandas as pd
 import matplotlib.pyplot as plt
 
-diabetes_df = pd.read_csv('regression/diabetes_clean.csv')
+diabetes_df = pd.read_csv('supervised_learning/regression/diabetes_clean.csv')
 
 X = diabetes_df.drop("glucose", axis = 1).values
 y = diabetes_df["glucose"].values
