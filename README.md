@@ -1,2 +1,2 @@
 
-this repository contains files and projects implementing several topics in machine learning
+this repository contains files and projects implementing, learning, and practicing several topics in machine learning
