@@ -1,0 +1,9 @@
+School ID,Name,Address,City,Subject,Marks,Rank,Grade
+101.0,Alice,123 Main St,Los Angeles,Math,85.0,2,B
+102.0,Bob,456 Oak Ave,New York,English,92.0,1,A
+103.0,Charlie,789 Pine Ln,Houston,Science,78.0,4,C
+,David,101 Elm St,Los Angeles,Math,89.0,3,B
+105.0,Eva,,Miami,History,,8,D
+106.0,Frank,222 Maple Rd,,Math,95.0,1,A
+107.0,Grace,444 Cedar Blvd,Houston,Science,80.0,5,C
+108.0,Henry,555 Birch Dr,New York,English,88.0,3,B
