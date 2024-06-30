@@ -6,7 +6,7 @@
 
 # a neuron in a linear layer...
 
-# * computs a linear operation using all
+# * computes a linear operation using all
 # * the neurons of a previous layer
 
 # contains n+1 learnable parameters
