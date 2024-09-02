@@ -4,16 +4,18 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('supervised_learning/classification/telecom_churn_clean.csv')
+data = pd.read_csv(
+    'supervised_learning/classification/telecom_churn_clean.csv'
+    )
 churn_df = pd.DataFrame(data)
 X = churn_df[["total_day_charge", "total_eve_charge"]].values
 y = churn_df["churn"].values
 
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size = 0.3, random_state = 21, stratify = y
+    X, y, test_size=0.3, random_state=21, stratify=y
 )
 
-knn = KNeighborsClassifier(n_neighbors = 6)
+knn = KNeighborsClassifier(n_neighbors=6)
 knn.fit(X_train, y_train)
 
 train_accuracies = {}
@@ -34,5 +36,3 @@ plt.legend()
 plt.xlabel("Number of Neighbors")
 plt.ylabel("Accuracy")
 plt.show()
-
-

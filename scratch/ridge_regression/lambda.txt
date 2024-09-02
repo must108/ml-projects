@@ -1,0 +1,61 @@
+
+remember linear regression
+
+ridge regression adds another important value: ridge penalty
+
+as ridge penalty increases, the line of best fit shrinks until it becomes flat
+
+it can be said that:
+as the penalty lambda increases:
+the y-intercept b0 stays constant
+the coefficient b1 goes to 0
+
+the lambda helps us handle collinearity, by penalizing b1 and other coefficients
+
+collinearity is when two variables in a dataset are very highly correlated
+this can skew our coefficients
+how this works is:
+one variable goes way too high for the value its trying to predict
+the other variable/variables try to compensate by having a negative coefficient
+this is bad!
+
+linear regression doesn't like collinear variables
+as you increase the lambda variable, the coefficients slowly shift back to normal
+overfitting is fixed, however too high lambda can cause underfitting
+
+steps:
+
+similar process to lin reg:
+
+y = XB
+multiply by transpose
+multiply by inverse
+B = (XTX)-1 XTy
+
+(XTX)-1 is the part of the equation where the ridge penalty is applied
+to "transpose" essentially means to "turn" a matrix to the right
+multiplying a matrix by its transpose gives you a square matrix
+
+a square matrix can be inverted! (you know this!)
+
+new equation for ridge regression: B = (XTX + lambdaI)-1 XTy
+
+another use case for ridge regression:
+if variables are multiples of each other, or variables added together
+the resulting XTX matrix cannot be inverted!
+
+ridge regression is useful for:
+reducing overfitting
+enabling matrix inversion
+
+data needs to be standardized for ridge regression
+this is done by setting std.dev of the data to 1,
+and the mean to 0
+
+you subtract the mean from each column, and divide by the std. dev.
+this is done to lower the values in the columns.
+
+as the lambda value is likely to be much smaller that the data,
+we need to scale the data to around the same size as the lambda
+this allows us to keep a relatively consistent lambda value across datasets
+

@@ -34,5 +34,3 @@ plt.show()
 
 # calculator residuals with the residual sum of squares
 # multiple linear regression models have multiple features
-
-
